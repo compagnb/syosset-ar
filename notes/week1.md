@@ -1,7 +1,4 @@
 ## Week 1
-## Introduction & Workspace Set-Up
-
-![Pokemon Go!](../img/pokemongo.jpg)
 
 ### Augmented Reality vs Virtual Reality
 * **Virtual reality**, or VR, requires you to inhabit an entirely virtual environment.
@@ -63,6 +60,7 @@
         * Use quotes around attributes
         * Indent to represent nesting
         * Use same capitalization
+    
 ### CSS Review
 * Cascading Style Sheets
 * a “style sheet language”, consisting of “style rules” that lets you style the elements on your page
