@@ -53,4 +53,32 @@
     * Have a preset bundle of components with default values
     * Map or proxy HTML attributes to component data
 
+### Textures
+* Apply the texture to our box by copying the url of the image we want to use, and then pasting it as a value of the src (source) attribute. 
+
+```html
+<a-scene embedded arjs=’sourceType: webcam;’>
+    <a-box src=”https://i.imgur.com/mYmmbrp.jpg” position=”0 0.5 -0.5″ color=”blue” scale=”1 0.5 1″ rotation=“0 45 0” material=’opacity: 0.9;’></a-box>
+    <a-marker-camera preset=’hiro’></a-marker-camera>
+</a-scene>
+```
+
+* To add a texture to a primitive model in A-Frame, add an <a-asset> entity and create an img tag with id and source parameters, and add a source parameter to the primitive entity pointing to the ID, for example: 
+
+```html
+<a-scene embedded arjs=’sourceType: webcam;’>
+    <a-assets>
+        <img id=”boxTexture” src=”https://i.imgur.com/mYmmbrp.jpg”>
+    </a-assets>
+    <a-box src=”#boxTexture” position=”0 0.5 -0.5″ color=”blue” scale=”1 0.5 1″ rotation=“0 45 0” material=’opacity: 0.9;’></a-box>
+    <a-marker-camera preset=’hiro’></a-marker-camera>
+</a-scene>
+```
+
+* **segments-height** attribute is used to smooth out the edges, to make the geometry rounder and less “pointy”.
+
+![segments height](../img/segments.png)
+
+
+
 
